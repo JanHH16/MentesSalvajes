@@ -300,12 +300,12 @@ const EducadorPage = () => {
                       <AccordionItem
                         key={cuestionario.id || index}
                         aria-label={`Cuestionario ${index + 1}`}
-                        title={cuestionario.titulocuestionario}
+                        title={'INICIA TU CUESTIONARIO AQUÍ'}
                         subtitle="Click para expandir."
                       >
                         <div className="p-2 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
                           <p className="text-gray-700">
-                            {cuestionario.descripcioncuestionario}
+                            {cuestionario.titulocuestionario}
                           </p>
 
                           {cuestionario.estadocuestionario?.toLowerCase() ===
